@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 12 resources" deleteContents="true" description="Delete 12 resources" element1="/armHi" element10="/mbtimer_bsp" element11="/testPeriph" element12="/testPeriph_bsp" element2="/armHi_bsp" element3="/design_1_wrapper_hw_platform_0" element4="/design_1_wrapper_hw_platform_1" element5="/design_1_wrapper_hw_platform_2" element6="/design_1_wrapper_hw_platform_3" element7="/mbHi" element8="/mbHi_bsp" element9="/mbtimer" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="12" stamp="1607513943126"/>
+</session>

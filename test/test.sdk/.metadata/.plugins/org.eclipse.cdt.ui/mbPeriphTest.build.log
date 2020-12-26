@@ -1,0 +1,26 @@
+14:05:17 **** Auto Build of configuration Debug for project mbPeriphTest ****
+make all 
+Building file: ../src/testperiph.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I../../mbPeriphTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+Finished building: ../src/testperiph.c
+ 
+Building file: ../src/xtmrctr_selftest_example.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_selftest_example.o" -I../../mbPeriphTest_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xtmrctr_selftest_example.d" -MT"src/xtmrctr_selftest_example.o" -o "src/xtmrctr_selftest_example.o" "../src/xtmrctr_selftest_example.c"
+Finished building: ../src/xtmrctr_selftest_example.c
+ 
+Building target: mbPeriphTest.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mbPeriphTest_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mbPeriphTest.elf"  ./src/testperiph.o ./src/xtmrctr_selftest_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: mbPeriphTest.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size mbPeriphTest.elf  |tee "mbPeriphTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4308	    288	   3164	   7760	   1e50	mbPeriphTest.elf
+Finished building: mbPeriphTest.elf.size
+ 
+
+14:05:18 Build Finished (took 563ms)
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# 
+# Start of session at: Wed Dec  9 15:19:31 2020
+# Process ID: 31000
+# Current directory: /media/ck/B6DAFDC2DAFD7F45/program/ViROB307/after_check/test/test.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /media/ck/B6DAFDC2DAFD7F45/program/ViROB307/after_check/test/test.sdk/webtalk/webtalk.log
+# Journal file: /media/ck/B6DAFDC2DAFD7F45/program/ViROB307/after_check/test/test.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

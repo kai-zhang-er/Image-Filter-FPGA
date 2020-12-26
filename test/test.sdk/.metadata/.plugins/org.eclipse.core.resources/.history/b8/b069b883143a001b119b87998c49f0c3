@@ -1,0 +1,89 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xtmrctr.h"
+#include "xparameters.h"
+
+/************************** Constant Definitions *****************************/
+
+/*
+ * The following constants map to the XPAR parameters created in the
+ * xparameters.h file. They are only defined here such that a user can easily
+ * change all the needed parameters in one place.
+ */
+#define TMRCTR_DEVICE_ID	XPAR_AXI_TIMER_0_DEVICE_ID
+#define INTC_DEVICE_ID		XPAR_INTC_0_DEVICE_ID
+
+/*
+ * The following constant determines which timer counter of the device that is
+ * used for this example, there are currently 2 timer counters in a device
+ * and this example uses the first one, 0, the timer numbers are 0 based
+ */
+#define TIMER_CNTR_0	 0
+
+
+/*
+ * The following constant is used to set the reset value of the timer counter,
+ * making this number larger reduces the amount of time this example consumes
+ * because it is the value the timer counter is loaded with when it is started
+ */
+#define RESET_VALUE	 0xF0000000
+
+
+
+
+int main()
+{
+    init_platform();
+    int Status;
+    XTmrCtr TimerCounterInst;   /* The instance of the Timer Counter */
+	/*
+	 * Initialize the timer counter so that it's ready to use,
+	 * specify the device ID that is generated in xparameters.h
+	 */
+	Status = XTmrCtr_Initialize(&TimerCounterInst, TMRCTR_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Perform a self-test to ensure that the hardware was built
+	 * correctly, use the 1st timer in the device (0)
+	 */
+//	Status = XTmrCtr_SelfTest(&TimerCounterInst, TIMER_CNTR_0);
+//	if (Status != XST_SUCCESS) {
+//		return XST_FAILURE;
+//	}
+
+	/*
+	 * Enable the interrupt of the timer counter so interrupts will occur
+	 * and use auto reload mode such that the timer counter will reload
+	 * itself automatically and continue repeatedly, without this option
+	 * it would expire once only
+	 */
+	XTmrCtr_SetOptions(&TimerCounterInst, TIMER_CNTR_0,XTC_AUTO_RELOAD_OPTION);
+
+
+	XTmrCtr_Reset(&TimerCounterInst, TIMER_CNTR_0);
+
+	/*
+	 * Start the timer counter such that it's incrementing by default,
+	 * then wait for it to timeout a number of times
+	 */
+	XTmrCtr_Start(&TimerCounterInst, TIMER_CNTR_0);
+	u32 start=XTmrCtr_GetValue(&TimerCounterInst, TIMER_CNTR_0);
+	xil_printf("run time %d s\r\n",(start));
+    print("Hello World\n\r");
+    for(int i=0;i<100;i++)
+    {
+    	sleep(1);
+    	u32 end=XTmrCtr_GetValue(&TimerCounterInst, TIMER_CNTR_0);
+    	xil_printf("run time %d s\r\n",end);
+    }
+///XPAR_AXI_TIMER_0_CLOCK_FREQ_HZ
+
+
+    XTmrCtr_Stop(&TimerCounterInst, TIMER_CNTR_0);
+    cleanup_platform();
+    return 0;
+}

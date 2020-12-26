@@ -1,0 +1,791 @@
+14:51:44 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/mytools.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mytools.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mytools.d" -MT"src/mytools.o" -o "src/mytools.o" "../src/mytools.c"
+Finished building: ../src/mytools.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37496	   2584	  23328	  63408	   f7b0	arm.elf
+Finished building: arm.elf.size
+ 
+14:52:34 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:102:8: warning: unused variable 't' [-Wunused-variable]
+  float t=(end1 - start1) / (COUNTS_PER_SECOND/1000000);
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38072	   2584	  23328	  63984	   f9f0	arm.elf
+Finished building: arm.elf.size
+ 
+15:02:47 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37632	   2584	  23328	  63544	   f838	arm.elf
+Finished building: arm.elf.size
+ 
+15:06:27 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/mytools.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mytools.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mytools.d" -MT"src/mytools.o" -o "src/mytools.o" "../src/mytools.c"
+Finished building: ../src/mytools.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37568	   2584	  23328	  63480	   f7f8	arm.elf
+Finished building: arm.elf.size
+ 
+15:15:08 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37568	   2584	  23328	  63480	   f7f8	arm.elf
+Finished building: arm.elf.size
+ 
+15:16:39 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37496	   2584	  23320	  63400	   f7a8	arm.elf
+Finished building: arm.elf.size
+ 
+22:56:26 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+23:00:35 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+23:00:50 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+14:34:51 **** Incremental Build of configuration Debug for project mb ****
+make all 
+make: Nothing to be done for 'all'.
+14:36:33 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+14:37:19 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+14:38:40 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+14:40:07 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37500	   2584	  23320	  63404	   f7ac	arm.elf
+Finished building: arm.elf.size
+ 
+14:42:52 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:92:8: warning: variable 't' set but not used [-Wunused-but-set-variable]
+  float t=(end - start)*1.0 / (COUNTS_PER_SECOND/1000);
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37632	   2584	  23320	  63536	   f830	arm.elf
+Finished building: arm.elf.size
+ 
+14:44:32 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64116	   2584	  23328	  90028	  15fac	arm.elf
+Finished building: arm.elf.size
+ 
+14:45:42 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64052	   2584	  23328	  89964	  15f6c	arm.elf
+Finished building: arm.elf.size
+ 
+14:47:11 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62276	   2584	  23328	  88188	  1587c	arm.elf
+Finished building: arm.elf.size
+ 
+14:50:14 **** Clean-only build of configuration Debug for project arm ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/mytools.o ./src/platform.o  ./src/helloworld.d ./src/mytools.d ./src/platform.d  arm.elf.size  arm.elf
+ 
+14:50:14 **** Auto Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/mytools.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/mytools.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mytools.d" -MT"src/mytools.o" -o "src/mytools.o" "../src/mytools.c"
+Finished building: ../src/mytools.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63120	   2584	  23328	  89032	  15bc8	arm.elf
+Finished building: arm.elf.size
+ 
+14:50:17 **** Clean-only build of configuration Debug for project arm ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/mytools.o ./src/platform.o  ./src/helloworld.d ./src/mytools.d ./src/platform.d  arm.elf.size arm.elf.size  arm.elf
+ 
+14:50:18 **** Auto Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/mytools.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/mytools.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mytools.d" -MT"src/mytools.o" -o "src/mytools.o" "../src/mytools.c"
+Finished building: ../src/mytools.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63120	   2584	  23328	  89032	  15bc8	arm.elf
+Finished building: arm.elf.size
+ 
+14:50:24 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63144	   2584	  23328	  89056	  15be0	arm.elf
+Finished building: arm.elf.size
+ 
+18:24:28 **** Incremental Build of configuration Debug for project mb ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/mytools.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mytools.o" -I../../mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mytools.d" -MT"src/mytools.o" -o "src/mytools.o" "../src/mytools.c"
+Finished building: ../src/mytools.c
+ 
+Building target: mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mb.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size mb.elf  |tee "mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36792	   1692	   3180	  41664	   a2c0	mb.elf
+Finished building: mb.elf.size
+ 
+18:24:45 **** Incremental Build of configuration Debug for project mb ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/mytools.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mytools.o" -I../../mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mytools.d" -MT"src/mytools.o" -o "src/mytools.o" "../src/mytools.c"
+Finished building: ../src/mytools.c
+ 
+Building target: mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mb.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size mb.elf  |tee "mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36828	   1692	   3184	  41704	   a2e8	mb.elf
+Finished building: mb.elf.size
+ 
+18:25:27 **** Incremental Build of configuration Debug for project mb ****
+make all 
+make: Nothing to be done for 'all'.
+18:25:45 **** Incremental Build of configuration Debug for project mb ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/mytools.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mytools.o" -I../../mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mytools.d" -MT"src/mytools.o" -o "src/mytools.o" "../src/mytools.c"
+Finished building: ../src/mytools.c
+ 
+Building target: mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mb.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size mb.elf  |tee "mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36792	   1692	   3180	  41664	   a2c0	mb.elf
+Finished building: mb.elf.size
+ 
+14:14:25 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/mytools.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/mytools.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mytools.d" -MT"src/mytools.o" -o "src/mytools.o" "../src/mytools.c"
+Finished building: ../src/mytools.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62912	   2584	  23328	  88824	  15af8	arm.elf
+Finished building: arm.elf.size
+ 
+14:15:06 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+14:16:35 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/mytools.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/mytools.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mytools.d" -MT"src/mytools.o" -o "src/mytools.o" "../src/mytools.c"
+Finished building: ../src/mytools.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62912	   2584	  23328	  88824	  15af8	arm.elf
+Finished building: arm.elf.size
+ 
+14:17:09 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/mytools.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/mytools.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mytools.d" -MT"src/mytools.o" -o "src/mytools.o" "../src/mytools.c"
+Finished building: ../src/mytools.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62912	   2584	  23328	  88824	  15af8	arm.elf
+Finished building: arm.elf.size
+ 
+14:17:48 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/mytools.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/mytools.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mytools.d" -MT"src/mytools.o" -o "src/mytools.o" "../src/mytools.c"
+Finished building: ../src/mytools.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62912	   2584	  23328	  88824	  15af8	arm.elf
+Finished building: arm.elf.size
+ 
+14:18:12 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/mytools.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/mytools.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mytools.d" -MT"src/mytools.o" -o "src/mytools.o" "../src/mytools.c"
+Finished building: ../src/mytools.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62912	   2584	  23328	  88824	  15af8	arm.elf
+Finished building: arm.elf.size
+ 
+14:20:07 **** Auto Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62912	   2584	  23328	  88824	  15af8	arm.elf
+Finished building: arm.elf.size
+ 
+14:28:14 **** Clean-only build of configuration Debug for project arm ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/mytools.o ./src/platform.o  ./src/helloworld.d ./src/mytools.d ./src/platform.d  arm.elf.size arm.elf.size  arm.elf
+ 
+14:28:14 **** Auto Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/mytools.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mytools.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mytools.d" -MT"src/mytools.o" -o "src/mytools.o" "../src/mytools.c"
+Finished building: ../src/mytools.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62492	   2584	  23328	  88404	  15954	arm.elf
+Finished building: arm.elf.size
+ 
+14:28:15 **** Clean-only build of configuration Debug for project arm ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/mytools.o ./src/platform.o  ./src/helloworld.d ./src/mytools.d ./src/platform.d  arm.elf.size  arm.elf
+ 
+14:28:15 **** Auto Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/mytools.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mytools.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mytools.d" -MT"src/mytools.o" -o "src/mytools.o" "../src/mytools.c"
+Finished building: ../src/mytools.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62492	   2584	  23328	  88404	  15954	arm.elf
+Finished building: arm.elf.size
+ 
+14:28:18 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+14:29:35 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/mytools.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mytools.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mytools.d" -MT"src/mytools.o" -o "src/mytools.o" "../src/mytools.c"
+Finished building: ../src/mytools.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62492	   2584	  23328	  88404	  15954	arm.elf
+Finished building: arm.elf.size
+ 
+14:30:05 **** Incremental Build of configuration Debug for project arm ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:52:
+../../arm_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/mytools.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mytools.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../arm_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mytools.d" -MT"src/mytools.o" -o "src/mytools.o" "../src/mytools.c"
+Finished building: ../src/mytools.c
+ 
+Building target: arm.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../arm_bsp/ps7_cortexa9_0/lib -o "arm.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: arm.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size arm.elf  |tee "arm.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62492	   2584	  23328	  88404	  15954	arm.elf
+Finished building: arm.elf.size
+ 

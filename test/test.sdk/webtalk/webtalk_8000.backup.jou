@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Mon Nov  9 20:47:32 2020
+# Process ID: 8000
+# Current directory: C:/Users/leprovo/workspace/coursENSTA/zoom2020_2021/ExampleVivadoSdkMicroBlazeAndArm/test/test.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/leprovo/workspace/coursENSTA/zoom2020_2021/ExampleVivadoSdkMicroBlazeAndArm/test/test.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/leprovo/workspace/coursENSTA/zoom2020_2021/ExampleVivadoSdkMicroBlazeAndArm/test/test.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

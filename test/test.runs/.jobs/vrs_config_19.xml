@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_xbar_0_synth_1" LaunchDir="/media/ck/B6DAFDC2DAFD7F45/program/ViROB307/test/test.runs/design_1_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_timer_0_0_synth_1" LaunchDir="/media/ck/B6DAFDC2DAFD7F45/program/ViROB307/test/test.runs/design_1_axi_timer_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

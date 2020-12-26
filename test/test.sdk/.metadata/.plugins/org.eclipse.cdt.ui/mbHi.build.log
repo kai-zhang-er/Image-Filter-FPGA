@@ -1,0 +1,33 @@
+11:28:30 **** Auto Build of configuration Debug for project mbHi ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mbHi_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:81:8: warning: unused variable 'nextPt' [-Wunused-variable]
+  Mat** nextPt=Harris(nextGray);
+        ^~~~~~
+../src/main.c:80:8: warning: unused variable 'prePt' [-Wunused-variable]
+  Mat** prePt=Harris(preGray);
+        ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../mbHi_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: mbHi.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mbHi_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mbHi.elf"  ./src/main.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mbHi.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mbHi.elf  |tee "mbHi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28004	   1308	   3176	  32488	   7ee8	mbHi.elf
+'Finished building: mbHi.elf.size'
+' '
+
+11:28:31 Build Finished (took 1s.239ms)
+

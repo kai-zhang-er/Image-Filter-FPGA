@@ -1,0 +1,26 @@
+18:25:45 **** Incremental Build of configuration Debug for project mb ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/mytools.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mytools.o" -I../../mb_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mytools.d" -MT"src/mytools.o" -o "src/mytools.o" "../src/mytools.c"
+Finished building: ../src/mytools.c
+ 
+Building target: mb.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mb.elf"  ./src/helloworld.o ./src/mytools.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: mb.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size mb.elf  |tee "mb.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36792	   1692	   3180	  41664	   a2c0	mb.elf
+Finished building: mb.elf.size
+ 
+
+18:25:46 Build Finished (took 559ms)
+

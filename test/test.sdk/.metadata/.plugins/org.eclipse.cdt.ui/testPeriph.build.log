@@ -1,0 +1,6 @@
+12:09:52 **** Incremental Build of configuration Debug for project testPeriph ****
+make all 
+make: Nothing to be done for 'all'.
+
+12:09:52 Build Finished (took 114ms)
+
